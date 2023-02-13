@@ -8,7 +8,6 @@ import { Provider } from "react-redux";
 import { applyMiddleware, compose, createStore } from "redux";
 import rootReducer from "./Redux/Reducer/rootReducer";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-//  applymiddleware để dành giải thích sau
 const store = createStore(
   rootReducer,
   composeEnhancers(applyMiddleware(thunk))
